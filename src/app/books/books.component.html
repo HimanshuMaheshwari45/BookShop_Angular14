@@ -1,0 +1,10 @@
+
+<h2>Best selling books</h2>
+
+<ul *ngIf="isShowing">
+    <ng-container *ngFor="let singleBook of books">
+        <app-book [book] = "singleBook"></app-book>
+        
+    </ng-container>
+
+</ul>
